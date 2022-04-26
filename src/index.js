@@ -7,26 +7,45 @@ import './home-page/home.css';   //css is loaded properly
 class NavBar extends React.Component{ //nav bar items about|blogs|career|portal|login-signup 
     render(){
         return(
-            <div className="horizontalNavBarBox">
-                <ul className="horizontalNavBar">
-                    <div className="navItems">
-                        <li>ABOUT</li>
-                        <li>BLOGS</li>
-                        <li>CAREER</li>   
-                        <li>PORTAL</li>
-                        <li className="signIn">
-                            |SIGN-IN|
-                        </li>
-                    </div>
-                </ul>
+            <div className="HomeParent">
+                <div className="horizontalNavBarBox">
+                    <ul className="horizontalNavBar">
+                        <div className="navItems">
+                            <li>ABOUT</li>
+                            <li>BLOGS</li>
+                            <li>CAREER</li>   
+                            <li>PORTAL</li>
+                            <li className="signIn">
+                                |SIGN-IN|
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div className="art">
+                    <img src="../assets/foundationsart.png"></img>
+                </div>
+
             </div>
         );     
     }
 }
 
+/*
+class Art extends React.Component {
+    render(){
+        return(
+               <div className="svgArt">
+                   <img src="./assets/foundationsart.png"></img>
+               </div> 
+        );
+    }
+}
+*/
+
 /********************************************** */
 ReactDOM.render(
     <NavBar />,
-    //<Square />,
+    //<Art/>,
     document.getElementById('root')
 );
