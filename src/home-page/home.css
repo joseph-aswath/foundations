@@ -34,6 +34,11 @@ li{
     text-align:center;
 }
 
+.art{
+    margin-left:370px;
+    position:center;
+}
+
 /***********************************************************************/
 @media (max-width:672px) {
     .horizontalNavBarBox{

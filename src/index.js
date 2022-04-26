@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './home-page/home.css';   //css is loaded properly
+import art from './vortex.webp';
 /******************************************* */
 //NOTE: component names should start with upper case !! or else they don't render !!
 class NavBar extends React.Component{ //nav bar items about|blogs|career|portal|login-signup 
@@ -23,7 +24,7 @@ class NavBar extends React.Component{ //nav bar items about|blogs|career|portal|
                 </div>
 
                 <div className="art">
-                    <img src="../assets/foundationsart.png"></img>
+                    <img src={art} alt="art for website"></img>
                 </div>
 
             </div>
